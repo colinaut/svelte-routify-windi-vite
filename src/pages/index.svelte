@@ -25,7 +25,7 @@
   <h2>Should be on green and bold (global style). On blue for XL screen.</h2>
 </main>
 
-<style lang="postcss" scoped>
+<style scoped>
   main {
     @apply p-8 text-xl;
   }
@@ -36,5 +36,15 @@
 
   a {
     @apply text-reepolee-500 font-bold;
+  }
+
+  h2 {
+    @apply bg-green-600 text-white p-2 font-bold;
+  }
+
+  @screen xl {
+    h2 {
+      @apply bg-blue-500;
+    }
   }
 </style>
